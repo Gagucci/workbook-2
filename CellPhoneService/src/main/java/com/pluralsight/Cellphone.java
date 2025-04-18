@@ -7,19 +7,27 @@ public class Cellphone {
     private String PhoneNumber;
     private String ownerName;
 
-
     public Cellphone() {
-        serialNumber = "0";
-        model = "";
-        carrier = "";
-        PhoneNumber = "";
-        ownerName = "";
-
+        // Default constructor
     }
+
+    //overloaded constructor
+    public Cellphone(String serialNumber, String model, String carrier, String phoneNumber, String ownerName) {
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.PhoneNumber = phoneNumber;
+        this.ownerName = ownerName;
+    }
+
     // accepts a phone number parameter and displays the message "owner's phone is calling phone-parameter"
     public void dial(String _phoneNumber) {
-        System.out.println( this.ownerName + " is calling " + _phoneNumber);
+        System.out.println(this.ownerName + " is calling " + _phoneNumber);
 
+    }
+
+    public void dial(Cellphone _phone) {
+        System.out.println(this.ownerName + " is calling " + _phone.getPhoneNumber());
     }
 
     public String getSerialNumber() {
@@ -61,6 +69,5 @@ public class Cellphone {
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
-
-
 }
+

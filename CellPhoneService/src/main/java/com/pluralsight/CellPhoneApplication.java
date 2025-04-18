@@ -6,6 +6,7 @@ public class CellPhoneApplication {
     static Scanner read = new Scanner(System.in);
     static Cellphone phoneOne = new Cellphone();
     static Cellphone phoneTwo = new Cellphone();
+    static Cellphone phoneThree = new Cellphone("123456789", "iPhone 14", "Verizon", "123-456-7890", "John Pork");
 
     public static void main(String[] args) {
 
@@ -31,9 +32,11 @@ public class CellPhoneApplication {
         //System.out.println(phoneOne.getSerialNumber() + "\n" + phoneOne.getModel() + "\n" + phoneOne.getCarrier() + "\n" + phoneOne.getPhoneNumber() + "\n" + phoneOne.getOwnerName());
         display(phoneOne);
         display(phoneTwo);
+        display(phoneThree);
 
         phoneTwo.dial(phoneOne.getPhoneNumber());
         phoneOne.dial(phoneTwo.getPhoneNumber());
+        phoneThree.dial(phoneOne);
 
     }
 
