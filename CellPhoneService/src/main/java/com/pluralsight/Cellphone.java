@@ -16,6 +16,11 @@ public class Cellphone {
         ownerName = "";
 
     }
+    // accepts a phone number parameter and displays the message "owner's phone is calling phone-parameter"
+    public void dial(String _phoneNumber) {
+        System.out.println( this.ownerName + " is calling " + _phoneNumber);
+
+    }
 
     public String getSerialNumber() {
         return serialNumber;
