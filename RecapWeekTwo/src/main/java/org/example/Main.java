@@ -21,6 +21,7 @@ public class Main {
         bookList.add(bookOne);
         bookList.add(bookTwo);
         bookList.add(bookThree);
+        bookList.add(bookFour);
 
         for (Book book : bookList) {
             book.displayBookInfo();
