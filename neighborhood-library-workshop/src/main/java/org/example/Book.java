@@ -16,18 +16,11 @@ public class Book {
         this.checkedOutTo = null;
     }
 
-
     public int getId() {return id;}
     public String getIsbn() {return isbn;}
     public String getTitle() {return Title;}
     public boolean isCheckedOut() {return isCheckedOut;}
     public String getCheckedOutTo() {return checkedOutTo;}
-
-    public void setId(int id) {this.id = id;}
-    public void setIsbn(String isbn) {this.isbn = isbn;}
-    public void setTitle(String title) {Title = title;}
-    public void setCheckedOut(boolean checkedOut) {isCheckedOut = checkedOut;}
-    public void setCheckedOutTo(String checkedOutTo) {this.checkedOutTo = checkedOutTo;}
 
     public void checkOut(String _user) {
         if (!isCheckedOut) {
