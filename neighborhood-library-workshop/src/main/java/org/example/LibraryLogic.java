@@ -36,7 +36,7 @@ public class LibraryLogic {
         booksArray[19] = new Book(19,"12345678920", "The Subtle Art of Not Giving a F*ck");
     }
 
-    // Method to display the library start menu
+    // Method to display the library start menu, runs a while loop until the user chooses to exit
     public void startMenu() {
         while (true) {
             System.out.println("\nLibrary Home Screen");
@@ -62,6 +62,7 @@ public class LibraryLogic {
             }
         }
     }
+
     // Loop over the books array and display the available books (not checked out)
     private void showAvailableBooks() {
         System.out.println("\nAvailable Books:");
@@ -82,6 +83,7 @@ public class LibraryLogic {
             checkOutBook(bookId, name);
         }
     }
+
     // Loop over the books array and display the checked out books
     private void showCheckedOutBooks() {
         System.out.println("\nChecked Out Books:");
