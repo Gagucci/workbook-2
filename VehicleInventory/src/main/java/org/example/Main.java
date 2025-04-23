@@ -25,7 +25,7 @@ public class Main {
             System.out.println("4. Search Vehicles by Color");
             System.out.println("5. Add a Vehicle");
             System.out.println("6. Exit");
-            System.out.print("Enter your choice (1 - 6):\n>");
+            System.out.print("Enter your choice (1 - 6):\n> ");
 
             int choice = read.nextInt();
             read.nextLine();
@@ -36,6 +36,7 @@ public class Main {
                     break;
                 case 2:
                 // search vehicles by make and model
+                    Helpers.searchByMake(fullInventory);
                     break;
                 case 3:
                 // search vehicles by price range
