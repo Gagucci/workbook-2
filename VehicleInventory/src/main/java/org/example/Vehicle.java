@@ -27,6 +27,10 @@ public class Vehicle {
     public void setOdometerReading(int odometerReading) { this.odometerReading = odometerReading; }
     public void setPrice(float price) { this.price = price; }
 
+    public void showDetails(){
+        System.out.printf("~~~~~~~~~~~~~~~~~\nVID: %d\nMake/Model: %s\nColor: %s\nOdometer Reading: %d\nPrice: $%f\n~~~~~~~~~~~~~~~~~\n",
+                this.vehicleId,this.makeModel,this.color,this.odometerReading,this.price);
+    }
 
 
 
