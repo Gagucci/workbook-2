@@ -46,7 +46,10 @@ public class Main {
                     break;
                 case 5:
                 // add a vehicle
+                    Helpers.addVehicle(fullInventory);
+                    break;
                 case 6:
+                // exit program
                     System.out.println("Goodbye!");
                     return;
                 default:
